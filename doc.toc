@@ -1,0 +1,11 @@
+\contentsline {section}{\numberline {1}XXX协作计算平台简介}{2}
+\contentsline {section}{\numberline {2}使用指南}{2}
+\contentsline {subsection}{\numberline {2.1}登陆管理平台}{2}
+\contentsline {subsubsection}{\numberline {2.1.1}项目信息}{2}
+\contentsline {subsubsection}{\numberline {2.1.2}\textbf {Admin}选项}{3}
+\contentsline {subsection}{\numberline {2.2}管理项目和用户}{3}
+\contentsline {subsubsection}{\numberline {2.2.1}创建项目}{4}
+\contentsline {subsubsection}{\numberline {2.2.2}更新项目}{6}
+\contentsline {subsubsection}{\numberline {2.2.3}修改项目用户成员}{6}
+\contentsline {subsubsection}{\numberline {2.2.4}删除项目}{7}
+\contentsline {subsubsection}{\numberline {2.2.5}创建用户}{8}
