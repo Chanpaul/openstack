@@ -169,4 +169,87 @@ $\bullet$ 进入管理界面，点击\textbf{``Identity''}->\textbf{``Projects''
 \label{fig:createUser1}
 \end{figure}
 
+\subsection{镜像制作}
+\subsubsection{镜像源下载}
+镜像是虚拟机操作系统的源，本协作计算平台支持linux、windows等多种操作系统。在制作镜像之前，用户需要下载相应镜像软件包至本地。下面首先给出几种常用操作系统镜像下载地址（具体请参考https://docs.openstack.org/image-guide/obtain-images.html）：
+Centor 6 镜像 http://cloud.centos.org/centos/6/images/ \\
+Centor 7 镜像 http://cloud.centos.org/centos/7/images/ \\
+CirrOS 镜像 http://download.cirros-cloud.net/ \\
+Debian 镜像 http://cdimage.debian.org/cdimage/openstack/ \\
+Fedora 镜像 https://getfedora.org/cloud/download/ \\
+Ubuntu 镜像 http://cloud-images.ubuntu.com/
+\subsubsection{镜像制作流程}
+在协作平台管理界面，点击``\textbf{Project}''->``\textbf{Compute}''->``\textbf{Images}''进入如图\ref{fig:createImage}所示界面，然后点击右上角``\textbf{+Create Image}''，弹出如图\ref{fig:createImageI}，输入镜像名称，导入已下载镜像包，镜像格式下拉菜单中选择``\textbf{QCOW2}''，多数镜像包格式是QCOW2格式。最后点击右下角``\textbf{Create Image}''完成镜像制作。
+\begin{figure}[!htb]
+\centering
+\includegraphics[width=6in]{./figures/createImage}
+\caption{创建镜像}
+\label{fig:createImage}
+\end{figure}
+
+\begin{figure}[!htb]
+\centering
+\includegraphics[width=6in]{./figures/createImageI}
+\caption{创建镜像}
+\label{fig:createImageI}
+\end{figure}
+\subsection{虚拟机管理}
+用户有2种方式登陆虚拟机，ssh和console。下面主要介绍ssh登陆方式。
+\subsubsection{虚拟机启动}
+在写作平台管理界面，点击``\textbf{Project}''->``\textbf{Compute}''->``\textbf{Images}''，在拟启动镜像栏最右侧，点击``\textbf{Launch}''，在如图\ref{fig:launchInstanceI}弹出窗口中输入虚拟机名以及拟启动虚拟机数量。其中在如图\ref{fig:launchInstanceII}，选择拟启动虚拟机的配置，如CPU数量、内存大小以及硬盘大小等；在如图\ref{fig:launchInstanceIII}，选择虚拟机网络提供商;点击``\textbf{Key Pair}''，在如图\ref{fig:launchInstanceKey}弹出窗口中设置SSH登陆密钥。用户可以直接选择已有密钥如图\ref{fig:launchInstanceKey}下半窗口所示，也可以点击``\textbf{+Create Key Pair}''创建新密钥对。将创建的密钥\textbf{*.pem}文件保存至本地用于后续ssh登陆该虚拟机。
+\begin{figure}[!htb]
+\centering
+\includegraphics[width=6in]{./figures/launchInstanceI}
+\caption{启动虚拟机}
+\label{fig:launchInstanceI}
+\end{figure}
+
+\begin{figure}[!htb]
+\centering
+\includegraphics[width=6in]{./figures/launchInstanceII}
+\caption{启动虚拟机}
+\label{fig:launchInstanceII}
+\end{figure}
+\begin{figure}[!htb]
+\centering
+\includegraphics[width=6in]{./figures/launchInstanceIII}
+\caption{启动虚拟机}
+\label{fig:launchInstanceIII}
+\end{figure}
+\begin{figure}[!htb]
+\centering
+\includegraphics[width=6in]{./figures/launchInstanceKey}
+\caption{启动虚拟机}
+\label{fig:launchInstanceKey}
+\end{figure}
+用户也可以通过如图\ref{fig:launchInstanceConfig}为虚拟机添加运行脚本，例如修改用户密码、修改登陆配置等。最后点击``\textbf{Launch Instance}''完成虚拟机启动。
+\begin{figure}[!htb]
+\centering
+\includegraphics[width=6in]{./figures/launchInstanceConfig}
+\caption{设置虚拟机运行脚本}
+\label{fig:launchInstanceConfig}
+\end{figure}
+
+\subsubsection{虚拟机登陆}
+虚拟机启动完毕，在``\textbf{Project}''->``\textbf{Compute}''->``\textbf{Instance}''能够看到该虚拟机ip地址、配置等信息如图\ref{fig:viewInstance}所示。
+\begin{figure}[!htb]
+\centering
+\includegraphics[width=6in]{./figures/launchInstanceConfig}
+\caption{设置虚拟机运行脚本}
+\label{fig:launchInstanceConfig}
+\end{figure}
+用户可以通过SSH登陆该虚拟机，具体指令结构如下：
+ssh -i *.pem name@ip
+其中，*.pem为在启动虚拟机时创建的密钥，注意此处必须给出该密钥的完整地址，同时该密钥文件的权限必须是600，即只有主用户有读写权限，组用户跟其他用户没有任何权限；name是该虚拟机中用户名，不同镜像通常拥有不同用户名，表\ref{tab:userName}给出常见镜像系统用户名。
+\begin{table}[!htb]
+\centering
+\caption{常见镜像默认登陆用户名}
+\label{tab:userName}
+\begin{tabular}{|c|c|} \hline
+ 镜像 &登陆名\\ \hline
+ ubuntu& ubuntu\\ \hline
+ debian& debian\\ \hline
+ centos& centos\\ \hline
+\end{tabular}
+\end{table}
 \end{document}

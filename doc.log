@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.14159265-2.6-0.99992 (TeX Live 2015/Debian) (preloaded format=xelatex 2016.9.14)  29 MAR 2017 10:05
+This is XeTeX, Version 3.14159265-2.6-0.99992 (TeX Live 2015/Debian) (preloaded format=xelatex 2016.9.14)  1 APR 2017 23:21
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -972,7 +972,11 @@ Package: bm 2014/10/28 v1.1c Bold Symbol Support (DPC/FMi)
 \symboldsymbols=\mathgroup8
 LaTeX Font Info:    Redeclaring math alphabet \mathbf on input line 141.
 LaTeX Info: Redefining \bm on input line 207.
-) (./doc.aux)
+) (./doc.aux
+
+LaTeX Warning: Label `fig:launchInstanceConfig' multiply defined.
+
+)
 \openout1 = `doc.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 5.
@@ -991,8 +995,7 @@ LaTeX Font Info:    Checking defaults for EU1/lmr/m/n on input line 5.
 LaTeX Font Info:    ... okay on input line 5.
 LaTeX Font Info:    Checking defaults for T3/cmr/m/n on input line 5.
 LaTeX Font Info:    Try loading font information for T3+cmr on input line 5.
-
-(/usr/share/texmf/tex/latex/tipa/t3cmr.fd
+ (/usr/share/texmf/tex/latex/tipa/t3cmr.fd
 File: t3cmr.fd 2001/12/31 TIPA font definitions
 )
 LaTeX Font Info:    ... okay on input line 5.
@@ -1190,18 +1193,87 @@ Overfull \hbox (54.20247pt too wide) in paragraph at lines 167--168
  [][] 
  []
 
-[7] [8] [9] (./doc.aux)
+[7]
+Overfull \hbox (178.63614pt too wide) in paragraph at lines 174--181
+\T1/ptm/m/n/12 https://docs.openstack.org/image-guide/obtain-images.html\EU1/Ad
+obeSongStd-Light.otf(0)/m/n/12 ）：| \T1/ptm/m/n/12 Cen-tor 6 \EU1/AdobeSongStd-L
+ight.otf(0)/m/n/12 镜 像 \T1/ptm/m/n/12 http://cloud.centos.org/centos/6/images/ 
+
+ []
+
+[8]
+File: ./figures/createImage.png Graphic file (type QTm)
+ <use  "./figures/createImage.png" >
+Overfull \hbox (54.20247pt too wide) in paragraph at lines 185--186
+ [][] 
+ []
+
+File: ./figures/createImageI.png Graphic file (type QTm)
+<use  "./figures/createImageI.png" >
+Overfull \hbox (54.20247pt too wide) in paragraph at lines 192--193
+ [][] 
+ []
+
+[9]
+File: ./figures/launchInstanceI.png Graphic file (type QTm)
+ <use  "./figures/launchInstanceI.png" >
+Overfull \hbox (54.20247pt too wide) in paragraph at lines 202--203
+ [][] 
+ []
+
+[10]
+File: ./figures/launchInstanceII.png Graphic file (type QTm)
+ <use  "./figures/launchInstanceII.png" >
+Overfull \hbox (54.20247pt too wide) in paragraph at lines 209--210
+ [][] 
+ []
+
+File: ./figures/launchInstanceIII.png Graphic file (type QTm)
+<use  "./figures/launchInstanceIII.png" >
+Overfull \hbox (54.20247pt too wide) in paragraph at lines 215--216
+ [][] 
+ []
+
+File: ./figures/launchInstanceKey.png Graphic file (type QTm)
+<use  "./figures/launchInstanceKey.png" >
+Overfull \hbox (54.20247pt too wide) in paragraph at lines 221--222
+ [][] 
+ []
+
+File: ./figures/launchInstanceConfig.png Graphic file (type QTm)
+<use  "./figures/launchInstanceConfig.png" >
+Overfull \hbox (54.20247pt too wide) in paragraph at lines 228--229
+ [][] 
+ []
+
+
+LaTeX Warning: Reference `fig:viewInstance' on page 11 undefined on input line 
+234.
+
+File: ./figures/launchInstanceConfig.png Graphic file (type QTm)
+<use  "./figures/launchInstanceConfig.png" >
+Overfull \hbox (54.20247pt too wide) in paragraph at lines 237--238
+ [][] 
+ []
+
+[11] [12] [13] [14] (./doc.aux)
 
 LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 
+
+LaTeX Warning: There were undefined references.
+
+
+LaTeX Warning: There were multiply-defined labels.
+
  ) 
 Here is how much of TeX's memory you used:
- 19366 strings out of 493638
- 379323 string characters out of 6146796
- 393333 words of memory out of 5000000
- 22592 multiletter control sequences out of 15000+600000
+ 19390 strings out of 493638
+ 379909 string characters out of 6146796
+ 393450 words of memory out of 5000000
+ 22609 multiletter control sequences out of 15000+600000
  27557 words of font info for 66 fonts, out of 8000000 for 9000
  1328 hyphenation exceptions out of 8191
  55i,10n,74p,10382b,277s stack positions out of 5000i,500n,10000p,200000b,80000s
 
-Output written on doc.pdf (9 pages).
+Output written on doc.pdf (14 pages).
