@@ -1,17 +1,12 @@
 \contentsline {section}{\numberline {1}XXX协作计算平台简介}{2}
 \contentsline {section}{\numberline {2}使用指南}{2}
 \contentsline {subsection}{\numberline {2.1}登陆管理平台}{2}
-\contentsline {subsubsection}{\numberline {2.1.1}项目信息}{2}
-\contentsline {subsubsection}{\numberline {2.1.2}\textbf {Admin}选项}{3}
-\contentsline {subsection}{\numberline {2.2}管理项目和用户}{3}
-\contentsline {subsubsection}{\numberline {2.2.1}创建项目}{4}
-\contentsline {subsubsection}{\numberline {2.2.2}更新项目}{6}
-\contentsline {subsubsection}{\numberline {2.2.3}修改项目用户成员}{6}
-\contentsline {subsubsection}{\numberline {2.2.4}删除项目}{7}
-\contentsline {subsubsection}{\numberline {2.2.5}创建用户}{8}
-\contentsline {subsection}{\numberline {2.3}镜像制作}{8}
-\contentsline {subsubsection}{\numberline {2.3.1}镜像源下载}{8}
-\contentsline {subsubsection}{\numberline {2.3.2}镜像制作流程}{9}
-\contentsline {subsection}{\numberline {2.4}虚拟机管理}{10}
-\contentsline {subsubsection}{\numberline {2.4.1}虚拟机启动}{10}
-\contentsline {subsubsection}{\numberline {2.4.2}虚拟机登陆}{11}
+\contentsline {subsection}{\numberline {2.2}标识}{2}
+\contentsline {subsection}{\numberline {2.3}管理}{3}
+\contentsline {subsection}{\numberline {2.4}项目}{9}
+\contentsline {subsection}{\numberline {2.5}镜像制作}{12}
+\contentsline {subsubsection}{\numberline {2.5.1}镜像源下载}{12}
+\contentsline {subsubsection}{\numberline {2.5.2}镜像制作流程}{13}
+\contentsline {subsection}{\numberline {2.6}虚拟机管理}{13}
+\contentsline {subsubsection}{\numberline {2.6.1}虚拟机启动}{13}
+\contentsline {subsubsection}{\numberline {2.6.2}虚拟机登陆}{14}

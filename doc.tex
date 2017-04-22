@@ -30,145 +30,218 @@
 \caption{登陆界面}
 \label{fig:login}
 \end{figure}
-在该页面需要用户输入域名（\textbf{domain}）、用户名（\textbf{user name}）以及密码（\textbf{password}）。这里域名跟上面提到域名不同，用户只需要输入\textbf{default}即可，用户名和密码则为协作平台管理员为不同用户分配的用户名和密码。输入完毕，点击\textbf{Sign In}，进入协作平台管理界面如图\ref{fig:afterLogin}。如果以普通用户身份登陆系统，该页面只显示项目选项（\textbf{Project}）；如果以管理员身份登陆，该页面显示项目选项（\textbf{Project}）、管理选项（\textbf{Admin}）以及标识选项（\textbf{Identyty}）。
+在该页面需要用户输入域名（\textbf{domain}）、用户名（\textbf{user name}）以及密码（\textbf{password}）。这里域名跟上面提到域名不同，用户只需要输入\textbf{default}即可，用户名和密码则为协作平台管理员为不同用户分配的用户名和密码。输入完毕，点击\textbf{Sign In}，进入协作平台管理界面如图\ref{fig:identityprojects}。如果以普通用户身份登陆系统，该页面只显示项目选项（\textbf{Project}）；如果以管理员身份登陆，该页面显示项目选项（\textbf{Project}）、管理选项（\textbf{Admin}）以及标识选项（\textbf{Identity}）。
+\subsection{标识}
+标识部分集中展示了项目、用户、群组以及角色等信息。图\ref{fig:identityprojects}所示给出项目标识包括的信息。项目标识列表显示所有当前运行在该协作计算平台的项目信息，如项目名称、项目描述、项目ID、运行状态等。另外，项目标识页面还提供创建项目、管理项目等功能，用户可以通过“+Create Project”按钮创建新项目，也可以在对应项目行最右侧“Manage Members”下拉菜单管理已有项目，例如删除项目、编辑项目、查看项目使用情况以及为该项目修改配额等。当写作平台运行项目数量较多时，用户也可以通过\ref{fig:identityprojects}页面上方的“Filter”设置特定规则，选择性显示部分项目。
 \begin{figure}[!htb]
 \centering
-\includegraphics[width=6in]{./figures/afterLogin}
+\includegraphics[width=6in]{./figures/Identity_Projects}
+%\includegraphics[height=2.1338in, width=3.3307in]{./the_directed_neighbor_tree.png}
+%\epsfig{file=./Fig1.png,height=2.1338in, width=3.3307in}
+\caption{项目标识界面}
+\label{fig:identityprojects}
+\end{figure}
+
+用户标识页面显示了协作平台用户信息如图\ref{fig:identityusers}所示，包括用户名、用户描述、用户邮箱、用户ID等，管理用户可以通过用户标识页面管理、创建用户。“+Create User”按钮提供创建用户接口，“Actions”列的下拉菜单提供了管理用户的接口，如删除用户、修改密码等。
+\begin{figure}[!htb]
+\centering
+\includegraphics[width=6in]{./figures/Identity_Users}
+%\includegraphics[height=2.1338in, width=3.3307in]{./the_directed_neighbor_tree.png}
+%\epsfig{file=./Fig1.png,height=2.1338in, width=3.3307in}
+\caption{用户标识界面}
+\label{fig:identityusers}
+\end{figure}
+群组主要用来方便管理用户，群组标识如图\ref{fig:identitygroups}列出了当前协作平台已有群组信息，包括名称、描述、ID等，提供了管理群组的接口，如“+Create Group”创建群组、“Actions”编辑群组等。
+\begin{figure}[!htb]
+\centering
+\includegraphics[width=6in]{./figures/Identity_Groups}
+%\includegraphics[height=2.1338in, width=3.3307in]{./the_directed_neighbor_tree.png}
+%\epsfig{file=./Fig1.png,height=2.1338in, width=3.3307in}
+\caption{群组标识界面}
+\label{fig:identitygroups}
+\end{figure}
+角色从宏观层面将用户分类，不同用户拥有不同角色。图\ref{fig:identityroles}角色标识列出了当前平台所提供的角色，如用户、管理员，以及角色ID等。用户可以根据特定需求创建角色。
+\begin{figure}[!htb]
+\centering
+\includegraphics[width=6in]{./figures/Identity_Roles}
+%\includegraphics[height=2.1338in, width=3.3307in]{./the_directed_neighbor_tree.png}
+%\epsfig{file=./Fig1.png,height=2.1338in, width=3.3307in}
+\caption{角色标识界面}
+\label{fig:identityroles}
+\end{figure}
+\subsection{管理}
+管理界面只有管理员能够看到，其它用户无法查看。管理界面综合展示了系统资源的管理与使用情况如图\ref{fig:adminsystemoverview}，包括系统超级管理、卷管理、网络以及镜像等。其中``Overview''显示了不同项目使用系统资源情况，用户可以按指定时间段进行查看。
+\begin{figure}[!htb]
+\centering
+\includegraphics[width=6in]{./figures/Admin_System_Overview}
 %\includegraphics[height=2.1338in, width=3.3307in]{./the_directed_neighbor_tree.png}
 %\epsfig{file=./Fig1.png,height=2.1338in, width=3.3307in}
 \caption{协作平台管理界面}
-\label{fig:afterLogin}
-\end{figure}
-\subsubsection{项目信息}
-该协作平台以项目为组织单位进行管理，用户可以同时参与多个项目，并在项目中创建、管理计算资源。
-
-点击项目选项（\textbf{Project}），用户可以查看、管理每个项目的计算资源如图\ref{fig:projectOverview}
-\begin{figure}[!htb]
-\centering
-\includegraphics[width=6in]{./figures/projectOverview}
-%\includegraphics[height=2.1338in, width=3.3307in]{./the_directed_neighbor_tree.png}
-%\epsfig{file=./Fig1.png,height=2.1338in, width=3.3307in}
-\caption{项目选项}
-\label{fig:projectOverview}
-\end{figure}
-从项目选项，用户可以访问如表\ref{tab:project}所示子选项。
-\begin{table}[!htb]
-\centering
-\caption{通过项目选项可访问的子选项}  \label{tab:project}
-\begin{tabular}{c|p{8cm}} \hline
-计算选项\textbf{Compute Tab} & \\ \hline
-\textbf{Overview}& 查看项目报告\\ \hline
-\textbf{Instances} & 查看、启动、创建快照，停止、暂停、重启实例，也可以通过VNC连接这些实例\\ \hline
-Volumes & 该子选项下又包括两个子选项，其中通过Volumes子选项可以查看、创建、编辑、删除volumes;通过Volume Snapshots子选项可以查看、创建、编辑、删除volume快照。 \\ \hline
-\textbf{Images} & 查看项目用户创建的镜像和实例快照，创建、编辑以及删除镜像，从镜像或快照启动实例。 \\ \hline
-\textbf{Access \& Security} & 为实例创建安全访问策略，其中\textbf{Security Groups}查看、创建、编辑以及删除安全组和相应规则；\textbf{Key Pairs}查看、创建、编辑、导入以及删除健对；\textbf{Floating IPs}为项目分配IP地址 \\ \hline
-\textbf{Network tab} &  \\ \hline
-\textbf{Network Topology} & 查看网络拓扑 \\ \hline
-\textbf{Compute tab} &  \\ \hline
-\textit{Networks} & 创建、管理公共、私有网络 \\ \hline
-\textit{Routers} & 创建、管理子网 \\
-\textit{Object Store tab}& \\ \hline
-\textit{Containers} & 创建、管理容器和对象 \\ \hline
-\textit{Orchestration tab} &  \\
-\textit{Stacks}& 通过\textit{REST API}组织多个复合云应用 \\ \hline
-\end{tabular}
-\end{table}
-\subsubsection{\textbf{Admin}选项}
-管理员通过\textbf{Admin}选项查看、管理实例，Volumes, flavors, images, projects, users, services, and quotas。
-\begin{figure}[!htb]
-\centering
-\includegraphics[width=6in]{./figures/adminOverview}
-%\includegraphics[height=2.1338in, width=3.3307in]{./the_directed_neighbor_tree.png}
-%\epsfig{file=./Fig1.png,height=2.1338in, width=3.3307in}
-\caption{Admin选项}
-\label{fig:adminOverview}
-\end{figure}
-通过\textbf{Admin}选项可以完成如表\ref{tab:admin}任务。
-\begin{table}[!htb]
-\centering
-\caption{通过项目选项可访问的子选项}  \label{tab:admin}
-\begin{tabular}{c|p{8cm}} \hline
-\textbf{Overview}& 查看报告\\ \hline
-\textbf{Resource Usage} & \textbf{Daily Report}查看日报表，\textbf{Stats}查看所有资源使用统计数据\\ \hline
-\textbf{Hypervisors} & 查看虚拟机监视器汇总信息\\ \hline
-\textbf{Host Aggregates} & 查看、创建、编辑host aggregates，查看可用域 \\ \hline
-\textbf{Instances} & 查看、停止、暂停、重启、挂起、迁移、删除运行一些项目实例，查看实例运行日志或者通过VNC访问实例。 \\ \hline
-\textbf{Volumes} & 查看、创建、编辑、删除volumes and volume type\\ \hline
-\textbf{Flavors} & 查看、创建、编辑、删除flavors. a flavor is size of an instance \\ \hline
-\textbf{Images} & 查看、创建、编辑、删除定制镜像 \\ \hline
-\textit{Networks} & 查看、创建、编辑、删除网络 \\ \hline
-\textit{Routers} & 查看、创建、编辑、删除路由器 \\
-
-\textit{System Info}& \textbf{Services}查看服务列表，\textbf{Compute Services}查看所有计算服务，\textbf{Network Agents}查看网络代理，\textbf{Default Quotas}查看默认配额\\ \hline
-\textit{Identity} &  \\ \hline
-\textit{Projects} & 查看、创建、用户分配、去除用户以及删除项目 \\
-\textit{Users}& 查看、创建、激活、注销、删除用户 \\ \hline
-\end{tabular}
-\end{table}
-\subsection{管理项目和用户}
-本小节概要：如何添加、更新、删除项目和用户；如何分配用户至多个项目，以及如何修改或移除用户分配；如何激活或暂时注销项目或用户。
-
-\subsubsection{创建项目}
-1. 登陆协作管理平台界面，从左侧管理列表选择``Identity''->``project''，进入如图\ref{fig:createProject}页面，在该页面右上侧点击``+Create Project''，弹出如图\ref{fig:createProject_1}所示窗口，在``Project Information''中输入项目名称和相应描述信息，另外2项``Domain ID''、``Domain Name''不做修改；点击该窗口``Project Members''，添加用户至该新建项目，或者通过点击``Project Groups''为该新建项目批量添加用户；点击``Quota''，编辑该新建项目所需计算、存储、网络等资源配额；最后点击右下角``Create Project''，完成项目创建。
-\begin{figure}[!htb]
-\centering
-\includegraphics[width=6in]{./figures/createProject}
-%\includegraphics[height=2.1338in, width=3.3307in]{./the_directed_neighbor_tree.png}
-%\epsfig{file=./Fig1.png,height=2.1338in, width=3.3307in}
-\caption{创建项目}
-\label{fig:createProject}
-\end{figure}
-\begin{figure}[!htb]
-\centering
-\includegraphics[width=6in]{./figures/createProject_1}
-%\includegraphics[height=2.1338in, width=3.3307in]{./the_directed_neighbor_tree.png}
-%\epsfig{file=./Fig1.png,height=2.1338in, width=3.3307in}
-\caption{创建项目}
-\label{fig:createProject_1}
-\end{figure}
-\subsubsection{更新项目}
-项目创建完成后，用户还可以对项目进行如修改项目名称和描述、激活、暂时注销等更新动作。
-1. 在管理选项(\textbf{Admin})中，打开\textbf{Identity}面板，点击\textbf{``Projects''}，然后选择拟更新项目；
-2. 在\textbf{``More''}下拉菜单中点击\textbf{``Edit Project''}，在弹出窗口完成对项目的更新；
-3. 点击\textbf{``Save''}进行保存。
-\textbf{备注:}
-$\bullet$ 被注销的项目将不在\textbf{``CURRENT PROJECT''}下拉菜单中显示；\\
-$\bullet$ 唯一隶属于被注销项目的用户将不能再登陆；\\
-$\bullet$ 被注销项目数据仍然被系统保存，管理员可以重新启用被注销项目；
-\subsubsection{修改项目用户成员}
-管理员可以动态为项目添加、删除用户成员。\\
-$\bullet$ 进入管理界面，点击\textbf{``Identity''}->\textbf{``Projects''}，点击拟修改项目或在拟修改项目行最右侧下拉菜单中选择\textbf{``Edit Project''}，在弹出如图\ref{fig:editProject}页面进行修改。
-\begin{figure}[!htb]
-\centering
-\includegraphics[width=6in]{./figures/editProject}
-\caption{修改项目成员}
-\label{fig:editProject}
-\end{figure}
-左侧\textbf{``All Users''}列显示所有可选用户，右侧\textbf{``Project Members''}显示已分配到该项目的用户；点击左侧对应用户\textbf{``+''}，将该用户添加至该项目；在右侧\textbf{``Project Members''}列，点击相应用户\textbf{``-''}，将该用户移出该项目；最后点击\textbf{``Save''}保存。
-\subsubsection{删除项目}
-删除项目操作如图\ref{fig:deleteProject}。在\textbf{``Identity‘’}下拉菜单中点击\textbf{``Projects''}，在对应项目行最右侧下拉菜单中选择\textbf{``Delete Project''}，完成项目删除。
-\begin{figure}[!htb]
-\centering
-\includegraphics[width=6in]{./figures/deleteProject}
-\caption{删除项目}
-\label{fig:deleteProject}
-\end{figure}
-\textbf{备注：}项目一旦被删除，将不能被恢复。
-\subsubsection{创建用户}
-管理员通过如图\ref{fig:createUser}、图\ref{fig:createUser1}界面创建用户帐号。首先点击\textbf{``Identity''}下拉列表，选择\textbf{``Users''}，在弹出页面点击\textbf{``+Create User''}按钮并显示如图\ref{fig:createUser1}所示页面，输入用户相关信息，最后点击右下角\textbf{``Create User''}按钮完成创建。
-\begin{figure}[!htb]
-\centering
-\includegraphics[width=6in]{./figures/createUser}
-\caption{创建用户}
-\label{fig:createUser}
-\end{figure}
-\begin{figure}[!htb]
-\centering
-\includegraphics[width=6in]{./figures/createUser1}
-\caption{创建用户}
-\label{fig:createUser1}
+\label{fig:adminsystemoverview}
 \end{figure}
 
+%\begin{figure}[!htb]
+%\centering
+%\includegraphics[width=6in]{./figures/Admin_System_ResourceUsage}
+%\caption{协作平台管理界面}
+%\label{fig:resourceusage}
+%\end{figure}
+``Hypervisors''界面列出了系统超级管理器，包括各计算节点资源利用情况、运行状态等。图\ref{fig:adminsystemhypervisors}中``Hypervisor''按钮列出了平台各计算节点资源配置情况，包括虚拟内核数量、内存、硬盘等，
+\begin{figure}[!htb]
+\centering
+\includegraphics[width=6in]{./figures/Admin_System_Hypervisors}
+\caption{协作平台超级管理器}
+\label{fig:adminsystemhypervisors}
+\end{figure}
+
+``Host Aggregates'' 如图\ref{fig:adminsystemhostagregates}是在 Availability Zones 的基础上更进一步地进行逻辑的分组和隔离。例如我们可以根据不同的 computes 节点的物理硬件配置将具有相同共性的物理资源规划在同一 Host Aggregate 之下，或者根据用户的具体需求将几个 computes 节点规划在具有相同用途的同一 Host Aggregate 之下，通过这样的划分有利于提高 OpenStack 资源的使用效率。Host Aggregates 可以通过 nova client 或 API 来创建和配置。Availability Zones 通常是对 computes 节点上的资源在小的区域内进行逻辑上的分组和隔离。例如在同一个数据中心，我们可以将 Availability Zones 规划到不同的机房，或者在同一机房的几个相邻的机架，从而保障如果某个 Availability Zone 的节点发生故障（如供电系统或网络），而不影响其他的 Availability Zones 上节点运行的虚拟机，通过这种划分来提高 OpenStack 的可用性。目前 OpenStack 默认的安装是把所有的 computes 节点划分到 nova 的 Availability Zone 上，但我们可以通过对 nova.conf 文件的配置来定义不同的 Availability zones。
+\begin{figure}[!htb]
+\centering
+\includegraphics[width=6in]{./figures/Admin_System_HostAggregates}
+\caption{协作平台主机汇聚管理}
+\label{fig:adminsystemhostagregates}
+\end{figure}
+``Instance''如图\ref{fig:adminsysteminstances}显示当前在写作平台运行的对象的相关信息，如所在节点、名称、镜像、IP地址以及配额等。用户可以在``Instance''界面编辑对象、删除对象。
+\begin{figure}[!htb]
+\centering
+\includegraphics[width=6in]{./figures/Admin_System_Instances}
+\caption{协作平台对象管理界面}
+\label{fig:adminsysteminstances}
+\end{figure}
+``Volumes''如图\ref{fig:adminsystemvolumes}主要用于卷管理，其中``Volumes''子界面列出了当前不同项目卷的基本信息，``Volume Types''列出不同卷类型信息，``Volume Snapshots''显示卷快照信息。
+\begin{figure}[!htb]
+\centering
+\includegraphics[width=6in]{./figures/Admin_System_Volumes}
+\caption{协作平台卷管理界面}
+\label{fig:adminsystemvolumes}
+\end{figure}
+``Flavors''如图\ref{fig:adminsystemflavors}为用户定制了不同对象模板，他们对资源占用情况不同。用户可以根据特定应用场景选择合适的模板创建对象。用户可以通过``+Create Flavor''定制模板，可以通过对应模板右侧下拉菜单对模板进行编辑。
+\begin{figure}[!htb]
+\centering
+\includegraphics[width=6in]{./figures/Admin_System_Flavors}
+\caption{协作平台模板管理界面}
+\label{fig:adminsystemflavors}
+\end{figure}
+``Images''如图\ref{fig:adminsystemimages}为用户提供了镜像管理接口。镜像通常定义了对象所使用的操作系统，是用户创建对象的起始点，用户可以点击镜像右侧下拉菜单创建指定镜像的对象，用户还可以通过``+Create Image''自行创建镜像。
+\begin{figure}[!htb]
+\centering
+\includegraphics[width=6in]{./figures/Admin_System_Images}
+\caption{协作平台镜像管理界面}
+\label{fig:adminsystemimages}
+\end{figure}
+``Networks''如图\ref{fig:adminsystemnetworks}显示不同项目的网络信息以及运行状况。用户可以通过右侧下拉菜单编辑网络，也可以通过``+Create Network''创建网络。
+\begin{figure}[!htb]
+\centering
+\includegraphics[width=6in]{./figures/Admin_System_Networks}
+\caption{协作平台网络管理界面}
+\label{fig:adminsystemnetworks}
+\end{figure}
+``Routers''如图\ref{fig:adminsystemrouters}列出了协作平台不同项目内部的路由信息。
+\begin{figure}[!htb]
+\centering
+\includegraphics[width=6in]{./figures/Admin_System_Routers}
+\caption{协作平台路由管理界面}
+\label{fig:adminsystemrouters}
+\end{figure}
+``Floating IPs''如图\ref{fig:adminsystemfloatingip}列出管理员为不同项目分配的IP地址。管理员可以通过``Allocate IP To Project''为项目分配IP地址，也可以通过右侧``Release Floating IP''释放已分配IP。
+\begin{figure}[!htb]
+\centering
+\includegraphics[width=6in]{./figures/Admin_System_FloatingIP}
+\caption{协作平台IP地址管理界面}
+\label{fig:adminsystemfloatingip}
+\end{figure}
+``Defaults''如图\ref{fig:adminsystemdefaults}显示了协作平台的默认管理信息，管理员可以查看系统资源使用及管理信息。
+\begin{figure}[!htb]
+\centering
+\includegraphics[width=6in]{./figures/Admin_System_Defaults}
+\caption{协作平台常规管理信息}
+\label{fig:adminsystemdefaults}
+\end{figure}
+
+%\begin{figure}[!htb]
+%\centering
+%\includegraphics[width=6in]{./figures/Admin_System_MetadataDefinitions}
+%\caption{协作平台管理界面}
+%\label{fig:adminsystemmetadatadefinitions}
+%\end{figure}
+``System Information''如图\ref{fig:adminsystemsysteminformation}所示列出了写作平台所提供的各类服务，例如卷、网络、标识、测量等；``Compute Services''列出了计算服务的详细信息如名称、节点、域以及状态等；``Block Storage Services''显示块存储服务信息，``Network Agents''列出网路服务信息。
+\begin{figure}[!htb]
+\centering
+\includegraphics[width=6in]{./figures/Admin_System_SystemInformation}
+\caption{协作平台系统管理信息}
+\label{fig:adminsystemsysteminformation}
+\end{figure}
+
+%\begin{figure}[!htb]
+%\centering
+%\includegraphics[width=6in]{./figures/Admin_System_SystemInformation_Block}
+%\caption{协作平台管理界面}
+%\label{fig:adminsystemsysteminformationblock}
+%\end{figure}
+
+%\begin{figure}[!htb]
+%\centering
+%\includegraphics[width=6in]{./figures/Admin_System_SystemInformation_ComputeService}
+%\caption{协作平台管理界面}
+%\label{fig:adminsystemsysteminformationcomputeservice}
+%\end{figure}
+
+%\begin{figure}[!htb]
+%\centering
+%\includegraphics[width=6in]{./figures/Admin_System_SystemInformation_NetworkAgents}
+%\caption{协作平台管理界面}
+%\label{fig:adminsystemsysteminformationnetworkagents}
+%\end{figure}
+\subsection{项目}
+``Project''帮助用户管理项目相关信息，主要包括``COMPUTE''计算信息和``NETWORK''网络信息。如图\ref{fig:projectcomputeoverview}为``COMPUTE''总览，显示各类资源使用信息，以及不同对象的资源使用情况。
+\begin{figure}[!htb]
+\centering
+\includegraphics[width=6in]{./figures/Project_Compute_Overview}
+\caption{协作平台项目信息总览}
+\label{fig:projectcomputeoverview}
+\end{figure}
+``Instance''如图\ref{fig:projectcomputeinstances}列出了各对象的详细信息包括IP地址、运行状态、镜像等。用户可以通过右上角``Launch Instance''创建对象，还可以通过对象右侧下拉菜单对对象进行管理。
+\begin{figure}[!htb]
+\centering
+\includegraphics[width=6in]{./figures/Project_Compute_Instances}
+\caption{协作平台项目对象}
+\label{fig:projectcomputeinstances}
+\end{figure}
+``Volumes''如图\ref{fig:projectcomputevolumes}显示卷管理信息；``Volume Snapshots''显示了卷快照信息。
+\begin{figure}[!htb]
+\centering
+\includegraphics[width=6in]{./figures/Project_Compute_Volumes}
+\caption{协作平台卷管理}
+\label{fig:projectcomputevolumes}
+\end{figure}
+``Images''列出了镜像详细信息。用户可以通过右上角``+Create Image''创建镜像，可以通过镜像右侧下拉菜单启动对象。
+\begin{figure}[!htb]
+\centering
+\includegraphics[width=6in]{./figures/Project_Compute_Images}
+\caption{协作平台镜像管理}
+\label{fig:projectcomputeimages}
+\end{figure}
+``Access \& Security''显示访问对象的安全相关信息。``Security Groups''列出了当前平台组信息，不同组拥有不同访问权限，用户可以通过右侧``Manage Rules''管理安全规则；``Key Pairs''现实系统中密钥管理信息，例如键值对，用户可以通过``+Create Key Pair''创建密钥管理信息，也可以通过``Import Key Pair''导入已有密钥信息。
+\begin{figure}[!htb]
+\centering
+\includegraphics[width=6in]{./figures/Project_Compute_AccessSecurity}
+\caption{协作平台安全管理}
+\label{fig:projectcomputeAccessSecurity}
+\end{figure}
+``Network''集中展示了系统网络相关信息，如网络拓扑、路由等。如图\ref{fig:projectnetworktopology}显示了当前写作平台的网络拓扑结构，``Networks''如图\ref{fig:projectnetworknetworks}列出了平台网络出口信息。
+\begin{figure}[!htb]
+\centering
+\includegraphics[width=6in]{./figures/Project_Network_Topology}
+\caption{协作平台网络拓扑管理界面}
+\label{fig:projectnetworktopology}
+\end{figure}
+
+\begin{figure}[!htb]
+\centering
+\includegraphics[width=6in]{./figures/Project_Network_Networks}
+\caption{协作平台网络信息}
+\label{fig:projectnetworknetworks}
+\end{figure}
 \subsection{镜像制作}
 \subsubsection{镜像源下载}
 镜像是虚拟机操作系统的源，本协作计算平台支持linux、windows等多种操作系统。在制作镜像之前，用户需要下载相应镜像软件包至本地。下面首先给出几种常用操作系统镜像下载地址（具体请参考https://docs.openstack.org/image-guide/obtain-images.html）：
@@ -179,65 +252,53 @@ Debian 镜像 http://cdimage.debian.org/cdimage/openstack/ \\
 Fedora 镜像 https://getfedora.org/cloud/download/ \\
 Ubuntu 镜像 http://cloud-images.ubuntu.com/
 \subsubsection{镜像制作流程}
-在协作平台管理界面，点击``\textbf{Project}''->``\textbf{Compute}''->``\textbf{Images}''进入如图\ref{fig:createImage}所示界面，然后点击右上角``\textbf{+Create Image}''，弹出如图\ref{fig:createImageI}，输入镜像名称，导入已下载镜像包，镜像格式下拉菜单中选择``\textbf{QCOW2}''，多数镜像包格式是QCOW2格式。最后点击右下角``\textbf{Create Image}''完成镜像制作。
+在协作平台管理界面，点击``\textbf{Project}''->``\textbf{Compute}''->``\textbf{Images}''进入如图\ref{fig:projectcomputeimages}所示界面，然后点击右上角``\textbf{+Create Image}''，弹出如图\ref{fig:createmage}，输入镜像名称，导入已下载镜像包，镜像格式下拉菜单中选择``\textbf{QCOW2}''，多数镜像包格式是QCOW2格式。最后点击右下角``\textbf{Create Image}''完成镜像制作。
 \begin{figure}[!htb]
 \centering
-\includegraphics[width=6in]{./figures/createImage}
+\includegraphics[width=6in]{./figures/CreateImage}
 \caption{创建镜像}
-\label{fig:createImage}
-\end{figure}
-
-\begin{figure}[!htb]
-\centering
-\includegraphics[width=6in]{./figures/createImageI}
-\caption{创建镜像}
-\label{fig:createImageI}
+\label{fig:createimage}
 \end{figure}
 \subsection{虚拟机管理}
 用户有2种方式登陆虚拟机，ssh和console。下面主要介绍ssh登陆方式。
 \subsubsection{虚拟机启动}
-在写作平台管理界面，点击``\textbf{Project}''->``\textbf{Compute}''->``\textbf{Images}''，在拟启动镜像栏最右侧，点击``\textbf{Launch}''，在如图\ref{fig:launchInstanceI}弹出窗口中输入虚拟机名以及拟启动虚拟机数量。其中在如图\ref{fig:launchInstanceII}，选择拟启动虚拟机的配置，如CPU数量、内存大小以及硬盘大小等；在如图\ref{fig:launchInstanceIII}，选择虚拟机网络提供商;点击``\textbf{Key Pair}''，在如图\ref{fig:launchInstanceKey}弹出窗口中设置SSH登陆密钥。用户可以直接选择已有密钥如图\ref{fig:launchInstanceKey}下半窗口所示，也可以点击``\textbf{+Create Key Pair}''创建新密钥对。将创建的密钥\textbf{*.pem}文件保存至本地用于后续ssh登陆该虚拟机。
+在写作平台管理界面，点击``\textbf{Project}''->``\textbf{Compute}''->``\textbf{Images}''，在拟启动镜像栏最右侧，点击``\textbf{Launch}''，在如图\ref{fig:launchInstance}弹出窗口中输入虚拟机名以及拟启动虚拟机数量。其中在如图\ref{fig:launchInstanceII}，选择拟启动虚拟机的配置，如CPU数量、内存大小以及硬盘大小等；在如图\ref{fig:launchInstanceIII}，选择虚拟机网络提供商;点击``\textbf{Key Pair}''，在如图\ref{fig:launchInstanceKey}弹出窗口中设置SSH登陆密钥。用户可以直接选择已有密钥如图\ref{fig:launchInstanceKey}下半窗口所示，也可以点击``\textbf{+Create Key Pair}''创建新密钥对。将创建的密钥\textbf{*.pem}文件保存至本地用于后续ssh登陆该虚拟机。
 \begin{figure}[!htb]
 \centering
-\includegraphics[width=6in]{./figures/launchInstanceI}
+\includegraphics[width=6in]{./figures/LaunchInstance}
 \caption{启动虚拟机}
-\label{fig:launchInstanceI}
+\label{fig:launchInstance}
 \end{figure}
 
 \begin{figure}[!htb]
 \centering
-\includegraphics[width=6in]{./figures/launchInstanceII}
+\includegraphics[width=6in]{./figures/LaunchInstanceII}
 \caption{启动虚拟机}
 \label{fig:launchInstanceII}
 \end{figure}
 \begin{figure}[!htb]
 \centering
-\includegraphics[width=6in]{./figures/launchInstanceIII}
+\includegraphics[width=6in]{./figures/LaunchInstanceIII}
 \caption{启动虚拟机}
 \label{fig:launchInstanceIII}
 \end{figure}
 \begin{figure}[!htb]
 \centering
-\includegraphics[width=6in]{./figures/launchInstanceKey}
+\includegraphics[width=6in]{./figures/LaunchInstanceKey}
 \caption{启动虚拟机}
 \label{fig:launchInstanceKey}
 \end{figure}
 用户也可以通过如图\ref{fig:launchInstanceConfig}为虚拟机添加运行脚本，例如修改用户密码、修改登陆配置等。最后点击``\textbf{Launch Instance}''完成虚拟机启动。
 \begin{figure}[!htb]
 \centering
-\includegraphics[width=6in]{./figures/launchInstanceConfig}
+\includegraphics[width=6in]{./figures/LaunchInstanceConfig}
 \caption{设置虚拟机运行脚本}
 \label{fig:launchInstanceConfig}
 \end{figure}
 
 \subsubsection{虚拟机登陆}
-虚拟机启动完毕，在``\textbf{Project}''->``\textbf{Compute}''->``\textbf{Instance}''能够看到该虚拟机ip地址、配置等信息如图\ref{fig:viewInstance}所示。
-\begin{figure}[!htb]
-\centering
-\includegraphics[width=6in]{./figures/launchInstanceConfig}
-\caption{设置虚拟机运行脚本}
-\label{fig:launchInstanceConfig}
-\end{figure}
+虚拟机启动完毕，在``\textbf{Project}''->``\textbf{Compute}''->``\textbf{Instance}''能够看到该虚拟机ip地址、配置等信息如图\ref{fig:projectcomputeinstances}所示。
+
 用户可以通过SSH登陆该虚拟机，具体指令结构如下：
 ssh -i *.pem name@ip
 其中，*.pem为在启动虚拟机时创建的密钥，注意此处必须给出该密钥的完整地址，同时该密钥文件的权限必须是600，即只有主用户有读写权限，组用户跟其他用户没有任何权限；name是该虚拟机中用户名，不同镜像通常拥有不同用户名，表\ref{tab:userName}给出常见镜像系统用户名。
