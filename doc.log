@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.14159265-2.6-0.99992 (TeX Live 2015/Debian) (preloaded format=xelatex 2016.9.14)  29 APR 2017 05:33
+This is XeTeX, Version 3.14159265-2.6-0.99992 (TeX Live 2015/Debian) (preloaded format=xelatex 2016.9.14)  1 MAY 2017 04:18
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1396,243 +1396,246 @@ File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 File: ./figures/ArchitectureOfPlatform.png Graphic file (type QTm)
 
 <use  "./figures/ArchitectureOfPlatform.png" >
-LaTeX Font Info:    Try loading font information for OMS+ptm on input line 30.
+LaTeX Font Info:    Try loading font information for OMS+ptm on input line 36.
 
 (/usr/share/texlive/texmf-dist/tex/latex/psnfss/omsptm.fd
 File: omsptm.fd 
 )
 LaTeX Font Info:    Font shape `OMS/ptm/m/n' in size <12> not available
-(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 30.
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 36.
  [2]
 LaTeX Font Info:    Font shape `T1/ptm/bx/n' in size <14.4> not available
-(Font)              Font shape `T1/ptm/b/n' tried instead on input line 50.
+(Font)              Font shape `T1/ptm/b/n' tried instead on input line 67.
 File: ./figures/login.png Graphic file (type QTm)
 
-<use  "./figures/login.png" >
+<use  "./figures/login.png" > [3]
 File: ./figures/Identity_Projects.png Graphic file (type QTm)
  <use  "./figures/Identity_Projects.png" >
-[3]
+[4]
 File: ./figures/Identity_Users.png Graphic file (type QTm)
  <use  "./figures/Identity_Users.png" >
-Overfull \hbox (54.20247pt too wide) in paragraph at lines 76--79
+Overfull \hbox (54.20247pt too wide) in paragraph at lines 93--96
  [][] 
  []
 
 File: ./figures/Identity_Groups.png Graphic file (type QTm)
 <use  "./figures/Identity_Groups.png" >
-Overfull \hbox (54.20247pt too wide) in paragraph at lines 85--88
+Overfull \hbox (54.20247pt too wide) in paragraph at lines 102--105
  [][] 
  []
 
 File: ./figures/Identity_Roles.png Graphic file (type QTm)
 <use  "./figures/Identity_Roles.png" >
-Overfull \hbox (54.20247pt too wide) in paragraph at lines 94--97
+Overfull \hbox (54.20247pt too wide) in paragraph at lines 111--114
  [][] 
  []
 
-[4]
+[5] [6]
 File: ./figures/Admin_System_Overview.png Graphic file (type QTm)
  <use  "./figures/Admin_System_Overview.png" >
-Overfull \hbox (54.20247pt too wide) in paragraph at lines 104--107
+Overfull \hbox (54.20247pt too wide) in paragraph at lines 121--124
  [][] 
  []
 
-[5]
 File: ./figures/Admin_System_Hypervisors.png Graphic file (type QTm)
- <use  "./figures/Admin_System_Hypervisors.png" >
-Overfull \hbox (54.20247pt too wide) in paragraph at lines 120--121
+<use  "./figures/Admin_System_Hypervisors.png" >
+Overfull \hbox (54.20247pt too wide) in paragraph at lines 137--138
  [][] 
  []
 
 File: ./figures/Admin_System_HostAggregates.png Graphic file (type QTm)
 <use  "./figures/Admin_System_HostAggregates.png" >
-Overfull \hbox (54.20247pt too wide) in paragraph at lines 128--129
+Overfull \hbox (54.20247pt too wide) in paragraph at lines 145--146
  [][] 
  []
 
 File: ./figures/Admin_System_Instances.png Graphic file (type QTm)
 <use  "./figures/Admin_System_Instances.png" >
-Overfull \hbox (54.20247pt too wide) in paragraph at lines 135--136
+Overfull \hbox (54.20247pt too wide) in paragraph at lines 152--153
  [][] 
  []
 
 File: ./figures/Admin_System_Volumes.png Graphic file (type QTm)
 <use  "./figures/Admin_System_Volumes.png" >
-Overfull \hbox (54.20247pt too wide) in paragraph at lines 142--143
+Overfull \hbox (54.20247pt too wide) in paragraph at lines 159--160
  [][] 
  []
 
 File: ./figures/Admin_System_Flavors.png Graphic file (type QTm)
 <use  "./figures/Admin_System_Flavors.png" >
-Overfull \hbox (54.20247pt too wide) in paragraph at lines 149--150
+Overfull \hbox (54.20247pt too wide) in paragraph at lines 166--167
  [][] 
  []
 
 File: ./figures/Admin_System_Images.png Graphic file (type QTm)
 <use  "./figures/Admin_System_Images.png" >
-Overfull \hbox (54.20247pt too wide) in paragraph at lines 156--157
+Overfull \hbox (54.20247pt too wide) in paragraph at lines 173--174
  [][] 
  []
 
 File: ./figures/Admin_System_Networks.png Graphic file (type QTm)
 <use  "./figures/Admin_System_Networks.png" >
-Overfull \hbox (54.20247pt too wide) in paragraph at lines 163--164
+Overfull \hbox (54.20247pt too wide) in paragraph at lines 180--181
  [][] 
  []
 
 File: ./figures/Admin_System_Routers.png Graphic file (type QTm)
 <use  "./figures/Admin_System_Routers.png" >
-Overfull \hbox (54.20247pt too wide) in paragraph at lines 170--171
+Overfull \hbox (54.20247pt too wide) in paragraph at lines 187--188
  [][] 
  []
 
 File: ./figures/Admin_System_FloatingIP.png Graphic file (type QTm)
 <use  "./figures/Admin_System_FloatingIP.png" >
-Overfull \hbox (54.20247pt too wide) in paragraph at lines 177--178
+Overfull \hbox (54.20247pt too wide) in paragraph at lines 194--195
  [][] 
  []
 
 File: ./figures/Admin_System_Defaults.png Graphic file (type QTm)
 <use  "./figures/Admin_System_Defaults.png" >
-Overfull \hbox (54.20247pt too wide) in paragraph at lines 184--185
+Overfull \hbox (54.20247pt too wide) in paragraph at lines 201--202
  [][] 
  []
 
-[6] [7] [8]
+[7] [8]
+
+LaTeX Warning: Text page 9 contains only floats.
+
+[9] [10]
 File: ./figures/Admin_System_SystemInformation.png Graphic file (type QTm)
  <use  "./figures/Admin_System_SystemInformation.png" >
-Overfull \hbox (54.20247pt too wide) in paragraph at lines 198--199
+Overfull \hbox (54.20247pt too wide) in paragraph at lines 215--216
  [][] 
  []
 
-[9]
+[11]
 File: ./figures/Project_Compute_Overview.png Graphic file (type QTm)
  <use  "./figures/Project_Compute_Overview.png" >
-Overfull \hbox (54.20247pt too wide) in paragraph at lines 227--228
+Overfull \hbox (54.20247pt too wide) in paragraph at lines 244--245
  [][] 
  []
 
 File: ./figures/Project_Compute_Instances.png Graphic file (type QTm)
 <use  "./figures/Project_Compute_Instances.png" >
-Overfull \hbox (54.20247pt too wide) in paragraph at lines 234--235
+Overfull \hbox (54.20247pt too wide) in paragraph at lines 251--252
  [][] 
  []
 
 File: ./figures/Project_Compute_Volumes.png Graphic file (type QTm)
 <use  "./figures/Project_Compute_Volumes.png" >
-Overfull \hbox (54.20247pt too wide) in paragraph at lines 241--242
+Overfull \hbox (54.20247pt too wide) in paragraph at lines 258--259
  [][] 
  []
 
 File: ./figures/Project_Compute_Images.png Graphic file (type QTm)
 <use  "./figures/Project_Compute_Images.png" >
-Overfull \hbox (54.20247pt too wide) in paragraph at lines 248--249
+Overfull \hbox (54.20247pt too wide) in paragraph at lines 265--266
  [][] 
  []
 
 File: ./figures/Project_Compute_AccessSecurity.png Graphic file (type QTm)
 <use  "./figures/Project_Compute_AccessSecurity.png" >
-Overfull \hbox (54.20247pt too wide) in paragraph at lines 255--256
+Overfull \hbox (54.20247pt too wide) in paragraph at lines 272--273
  [][] 
  []
 
 File: ./figures/Project_Network_Topology.png Graphic file (type QTm)
 <use  "./figures/Project_Network_Topology.png" >
-Overfull \hbox (54.20247pt too wide) in paragraph at lines 262--263
+Overfull \hbox (54.20247pt too wide) in paragraph at lines 279--280
  [][] 
  []
 
-[10] [11]
+[12]
 
-LaTeX Warning: Text page 12 contains only floats.
+LaTeX Warning: Text page 13 contains only floats.
 
-[12] [13]
+[13]
 File: ./figures/Project_Network_Networks.png Graphic file (type QTm)
  <use  "./figures/Project_Network_Networks.png" >
-Overfull \hbox (54.20247pt too wide) in paragraph at lines 269--270
+Overfull \hbox (54.20247pt too wide) in paragraph at lines 286--287
  [][] 
  []
 
 
-Overfull \hbox (54.63257pt too wide) in paragraph at lines 275--282
+Overfull \hbox (54.63257pt too wide) in paragraph at lines 292--299
 \EU1/FandolSong-Regular(0)/m/n/12 先 给 出 几 种 常 用 操 作 系 统 镜 像 下 载 地 址  |（具 体 请 参 
 考 \T1/ptm/m/n/12 https://docs.openstack.org/image-
  []
 
 
-Overfull \hbox (16.86607pt too wide) in paragraph at lines 275--282
+Overfull \hbox (16.86607pt too wide) in paragraph at lines 292--299
 \T1/ptm/m/n/12 guide/obtain-images.html\EU1/FandolSong-Regular(0)/m/n/12 ）：| \T
 1/ptm/m/n/12 Cen-tor 6 \EU1/FandolSong-Regular(0)/m/n/12 镜 像 \T1/ptm/m/n/12 htt
 p://cloud.centos.org/centos/6/images/ 
  []
 
 [14]
+Overfull \vbox (52.75107pt too high) has occurred while \output is active []
 
-LaTeX Warning: Reference `fig:createmage' on page 15 undefined on input line 28
-3.
+
+[15]
+
+LaTeX Warning: Reference `fig:createmage' on page 16 undefined on input line 30
+0.
 
 File: ./figures/CreateImage.png Graphic file (type QTm)
 <use  "./figures/CreateImage.png" >
-Overfull \hbox (54.20247pt too wide) in paragraph at lines 286--287
+Overfull \hbox (54.20247pt too wide) in paragraph at lines 303--304
  [][] 
  []
 
 File: ./figures/LaunchInstance.png Graphic file (type QTm)
 <use  "./figures/LaunchInstance.png" >
-Overfull \hbox (54.20247pt too wide) in paragraph at lines 296--297
+Overfull \hbox (54.20247pt too wide) in paragraph at lines 313--314
  [][] 
  []
 
-[15]
 File: ./figures/LaunchInstanceII.png Graphic file (type QTm)
- <use  "./figures/LaunchInstanceII.png" >
-Overfull \hbox (54.20247pt too wide) in paragraph at lines 303--304
+<use  "./figures/LaunchInstanceII.png" >
+Overfull \hbox (54.20247pt too wide) in paragraph at lines 320--321
  [][] 
  []
 
 File: ./figures/LaunchInstanceIII.png Graphic file (type QTm)
 <use  "./figures/LaunchInstanceIII.png" >
-Overfull \hbox (54.20247pt too wide) in paragraph at lines 309--310
+Overfull \hbox (54.20247pt too wide) in paragraph at lines 326--327
  [][] 
  []
 
 File: ./figures/LaunchInstanceKey.png Graphic file (type QTm)
 <use  "./figures/LaunchInstanceKey.png" >
-Overfull \hbox (54.20247pt too wide) in paragraph at lines 315--316
+Overfull \hbox (54.20247pt too wide) in paragraph at lines 332--333
  [][] 
  []
 
 File: ./figures/LaunchInstanceConfig.png Graphic file (type QTm)
 <use  "./figures/LaunchInstanceConfig.png" >
-Overfull \hbox (54.20247pt too wide) in paragraph at lines 322--323
+Overfull \hbox (54.20247pt too wide) in paragraph at lines 339--340
  [][] 
  []
 
-
-Overfull \hbox (4.70042pt too wide) in paragraph at lines 330--344
+[16]
+Overfull \hbox (4.70042pt too wide) in paragraph at lines 347--361
 []\EU1/FandolSong-Regular(0)/m/n/12 用 户 可 以 通 过 \T1/ptm/m/n/12 SSH \EU1/FandolS
 ong-Regular(0)/m/n/12 登 陆 该 虚 拟 机，|  具 体 指 令 结 构 如 下：| \T1/ptm/m/n/12 ssh -i *.
 pem name@ip
  []
 
-[16] [17] [18] [19] [20] (./doc.aux)
+[17] [18] [19] [20] [21] (./doc.aux)
 
 LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 
 
 LaTeX Warning: There were undefined references.
 
-
-LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
-
  ) 
 Here is how much of TeX's memory you used:
- 21876 strings out of 493638
- 443792 string characters out of 6146796
+ 21877 strings out of 493638
+ 443800 string characters out of 6146796
  432657 words of memory out of 5000000
- 25012 multiletter control sequences out of 15000+600000
+ 25013 multiletter control sequences out of 15000+600000
  25938 words of font info for 65 fonts, out of 8000000 for 9000
  1328 hyphenation exceptions out of 8191
- 65i,10n,77p,10425b,387s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 65i,11n,77p,10425b,393s stack positions out of 5000i,500n,10000p,200000b,80000s
 
-Output written on doc.pdf (20 pages).
+Output written on doc.pdf (21 pages).

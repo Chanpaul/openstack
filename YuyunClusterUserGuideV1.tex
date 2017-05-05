@@ -15,7 +15,7 @@
 \newpage
 
 \section {教育大数据协作计算平台简介}
-教育大数据协同计算平台是云操作系统，它通过数据中心有效管理云系统中的计算资源，存储资源和网络资源。协同计算平台给予管理员和用户不同的权限，云平台管理员通过基于网页浏览器的表格形式管理系统资源，然而普通用户则通过网页浏览器使用资源。协同计算平台主要是为了能够同时让不同用户执行不同任务在同一个系统云平台上协调工作，互不干扰。教育大数据协同计算平台的基本功能：
+教育大数据协同计算平台是云操作系统，它通过数据中心有效管理云系统中的计算资源，存储资源和网络资源。协同计算平台给予管理员和用户不同的权限，云平台管理员通过基于网页浏览器的表格形式管理系统资源，然而普通用户则通过网页浏览器使用资源。协同计算平台主要是为了能够同时让不同用户执行不同任务在同一个系统云平台上协调工作，互不干扰。教育大数据协同计算平台的基本功能： \\
 （1） 大数据科研和开发：用户可以在该平台上开展大数据研究和开发，用户可以按照需求安装所需软件和环境，就像在自己的计算机上一样，不同的是用户可以使用所需要的计算资源; \\
 （2） 大数据教学：教师可以为一个班级中的每一个学生开一个账号，每一个学生可以安装自己的软件环境，而无需担心影响其他学生，并且每一个学生都可以用所需的计算资源; \\
 （3） 高性能计算服务：对于计算密集型的高性能计算应用问题，用户更关心计算效率，如果系统安装有高性能网络，该平台可以将高性能网络与高性能计算任务关联在一起达到高性能的目的; \\
@@ -57,12 +57,14 @@
 6 & 协同计算大数据开发环境 \\ \hline
 7 & 协同计算并行管理系统   \\ \hline
 8 & 协同计算大数据架构系统  \\ \hline
-9 & 协同计算并行随机存储控制器系统 \\ \hline
+9 & 协同计算存储系统 \\ \hline
 10 & 协同计算网络环境系统  \\ \hline
 \end{tabular}
 \end{table*}
 
-\section {使用指南}
+\section {协同计算安装和恢复模块}
+需要补充
+\section{协同计算平台管理模块}
 在使用本指南之前，用户需要向所在单位网络运营管理部门申请IP地址和域名，为后续运营管理该协作计算平台做好准备工作。
 \subsection{登陆管理平台}
 打开浏览器，输入协作管理平台IP地址XXX.XXX.XXX.XXX或域名www.xxx.xxx.com，回车，得到如图\ref{fig:login}所示登陆界面。
@@ -76,45 +78,6 @@
 \label{fig:login}
 \end{figure}
 在该页面需要用户输入域名（\textbf{domain}）、用户名（\textbf{user name}）以及密码（\textbf{password}）。这里域名跟上面提到域名不同，用户只需要输入\textbf{default}即可，用户名和密码则为协作平台管理员为不同用户分配的用户名和密码。输入完毕，点击\textbf{Sign In}，进入协作平台管理界面如图\ref{fig:identityprojects}。如果以普通用户身份登陆系统，该页面只显示项目选项（\textbf{Project}）；如果以管理员身份登陆，该页面显示项目选项（\textbf{Project}）、管理选项（\textbf{Admin}）以及标识选项（\textbf{Identity}）。
-\subsection{标识}
-标识部分集中展示了项目、用户、群组以及角色等信息。图\ref{fig:identityprojects}所示给出项目标识包括的信息。项目标识列表显示所有当前运行在该协作计算平台的项目信息，如项目名称、项目描述、项目ID、运行状态等。另外，项目标识页面还提供创建项目、管理项目等功能，用户可以通过“+Create Project”按钮创建新项目，也可以在对应项目行最右侧“Manage Members”下拉菜单管理已有项目，例如删除项目、编辑项目、查看项目使用情况以及为该项目修改配额等。当写作平台运行项目数量较多时，用户也可以通过\ref{fig:identityprojects}页面上方的“Filter”设置特定规则，选择性显示部分项目。
-\begin{figure}[!htb]
-\centering
-\includegraphics[width=5in]{./figures/Identity_Projects}
-%\includegraphics[height=2.1338in, width=3.3307in]{./the_directed_neighbor_tree.png}
-%\epsfig{file=./Fig1.png,height=2.1338in, width=3.3307in}
-\caption{项目标识界面}
-\label{fig:identityprojects}
-\end{figure}
-
-用户标识页面显示了协作平台用户信息如图\ref{fig:identityusers}所示，包括用户名、用户描述、用户邮箱、用户ID等，管理用户可以通过用户标识页面管理、创建用户。“+Create User”按钮提供创建用户接口，“Actions”列的下拉菜单提供了管理用户的接口，如删除用户、修改密码等。
-\begin{figure}[!htb]
-\centering
-\includegraphics[width=6in]{./figures/Identity_Users}
-%\includegraphics[height=2.1338in, width=3.3307in]{./the_directed_neighbor_tree.png}
-%\epsfig{file=./Fig1.png,height=2.1338in, width=3.3307in}
-\caption{用户标识界面}
-\label{fig:identityusers}
-\end{figure}
-群组主要用来方便管理用户，群组标识如图\ref{fig:identitygroups}列出了当前协作平台已有群组信息，包括名称、描述、ID等，提供了管理群组的接口，如“+Create Group”创建群组、“Actions”编辑群组等。
-\begin{figure}[!htb]
-\centering
-\includegraphics[width=6in]{./figures/Identity_Groups}
-%\includegraphics[height=2.1338in, width=3.3307in]{./the_directed_neighbor_tree.png}
-%\epsfig{file=./Fig1.png,height=2.1338in, width=3.3307in}
-\caption{群组标识界面}
-\label{fig:identitygroups}
-\end{figure}
-角色从宏观层面将用户分类，不同用户拥有不同角色。图\ref{fig:identityroles}角色标识列出了当前平台所提供的角色，如用户、管理员，以及角色ID等。用户可以根据特定需求创建角色。
-\begin{figure}[!htb]
-\centering
-\includegraphics[width=6in]{./figures/Identity_Roles}
-%\includegraphics[height=2.1338in, width=3.3307in]{./the_directed_neighbor_tree.png}
-%\epsfig{file=./Fig1.png,height=2.1338in, width=3.3307in}
-\caption{角色标识界面}
-\label{fig:identityroles}
-\end{figure}
-\subsection{管理}
 管理界面只有管理员能够看到，其它用户无法查看。管理界面综合展示了系统资源的管理与使用情况如图\ref{fig:adminsystemoverview}，包括系统超级管理、卷管理、网络以及镜像等。其中``Overview''显示了不同项目使用系统资源情况，用户可以按指定时间段进行查看。
 \begin{figure}[!htb]
 \centering
@@ -125,12 +88,6 @@
 \label{fig:adminsystemoverview}
 \end{figure}
 
-%\begin{figure}[!htb]
-%\centering
-%\includegraphics[width=6in]{./figures/Admin_System_ResourceUsage}
-%\caption{协作平台管理界面}
-%\label{fig:resourceusage}
-%\end{figure}
 ``Hypervisors''界面列出了系统超级管理器，包括各计算节点资源利用情况、运行状态等。图\ref{fig:adminsystemhypervisors}中``Hypervisor''按钮列出了平台各计算节点资源配置情况，包括虚拟内核数量、内存、硬盘等，
 \begin{figure}[!htb]
 \centering
@@ -203,12 +160,6 @@
 \label{fig:adminsystemdefaults}
 \end{figure}
 
-%\begin{figure}[!htb]
-%\centering
-%\includegraphics[width=6in]{./figures/Admin_System_MetadataDefinitions}
-%\caption{协作平台管理界面}
-%\label{fig:adminsystemmetadatadefinitions}
-%\end{figure}
 ``System Information''如图\ref{fig:adminsystemsysteminformation}所示列出了写作平台所提供的各类服务，例如卷、网络、标识、测量等；``Compute Services''列出了计算服务的详细信息如名称、节点、域以及状态等；``Block Storage Services''显示块存储服务信息，``Network Agents''列出网路服务信息。
 \begin{figure}[!htb]
 \centering
@@ -216,28 +167,38 @@
 \caption{协作平台系统管理信息}
 \label{fig:adminsystemsysteminformation}
 \end{figure}
+\section{协同计算应用仓库} 
 
-%\begin{figure}[!htb]
-%\centering
-%\includegraphics[width=6in]{./figures/Admin_System_SystemInformation_Block}
-%\caption{协作平台管理界面}
-%\label{fig:adminsystemsysteminformationblock}
-%\end{figure}
-
-%\begin{figure}[!htb]
-%\centering
-%\includegraphics[width=6in]{./figures/Admin_System_SystemInformation_ComputeService}
-%\caption{协作平台管理界面}
-%\label{fig:adminsystemsysteminformationcomputeservice}
-%\end{figure}
-
-%\begin{figure}[!htb]
-%\centering
-%\includegraphics[width=6in]{./figures/Admin_System_SystemInformation_NetworkAgents}
-%\caption{协作平台管理界面}
-%\label{fig:adminsystemsysteminformationnetworkagents}
-%\end{figure}
-\subsection{项目}
+\section{协同计算用户管理系统}  
+用户标识页面显示了协作平台用户信息如图\ref{fig:identityusers}所示，包括用户名、用户描述、用户邮箱、用户ID等，管理用户可以通过用户标识页面管理、创建用户。“+Create User”按钮提供创建用户接口，“Actions”列的下拉菜单提供了管理用户的接口，如删除用户、修改密码等。
+\begin{figure}[!htb]
+\centering
+\includegraphics[width=6in]{./figures/Identity_Users}
+%\includegraphics[height=2.1338in, width=3.3307in]{./the_directed_neighbor_tree.png}
+%\epsfig{file=./Fig1.png,height=2.1338in, width=3.3307in}
+\caption{用户标识界面}
+\label{fig:identityusers}
+\end{figure}
+群组主要用来方便管理用户，群组标识如图\ref{fig:identitygroups}列出了当前协作平台已有群组信息，包括名称、描述、ID等，提供了管理群组的接口，如“+Create Group”创建群组、“Actions”编辑群组等。
+\begin{figure}[!htb]
+\centering
+\includegraphics[width=6in]{./figures/Identity_Groups}
+%\includegraphics[height=2.1338in, width=3.3307in]{./the_directed_neighbor_tree.png}
+%\epsfig{file=./Fig1.png,height=2.1338in, width=3.3307in}
+\caption{群组标识界面}
+\label{fig:identitygroups}
+\end{figure}
+角色从宏观层面将用户分类，不同用户拥有不同角色。图\ref{fig:identityroles}角色标识列出了当前平台所提供的角色，如用户、管理员，以及角色ID等。用户可以根据特定需求创建角色。
+\begin{figure}[!htb]
+\centering
+\includegraphics[width=6in]{./figures/Identity_Roles}
+%\includegraphics[height=2.1338in, width=3.3307in]{./the_directed_neighbor_tree.png}
+%\epsfig{file=./Fig1.png,height=2.1338in, width=3.3307in}
+\caption{角色标识界面}
+\label{fig:identityroles}
+\end{figure}
+\subsection{管理}
+\section{协同计算任务管理系统} 
 ``Project''帮助用户管理项目相关信息，主要包括``COMPUTE''计算信息和``NETWORK''网络信息。如图\ref{fig:projectcomputeoverview}为``COMPUTE''总览，显示各类资源使用信息，以及不同对象的资源使用情况。
 \begin{figure}[!htb]
 \centering
@@ -252,13 +213,7 @@
 \caption{协作平台项目对象}
 \label{fig:projectcomputeinstances}
 \end{figure}
-``Volumes''如图\ref{fig:projectcomputevolumes}显示卷管理信息；``Volume Snapshots''显示了卷快照信息。
-\begin{figure}[!htb]
-\centering
-\includegraphics[width=6in]{./figures/Project_Compute_Volumes}
-\caption{协作平台卷管理}
-\label{fig:projectcomputevolumes}
-\end{figure}
+
 ``Images''列出了镜像详细信息。用户可以通过右上角``+Create Image''创建镜像，可以通过镜像右侧下拉菜单启动对象。
 \begin{figure}[!htb]
 \centering
@@ -272,7 +227,22 @@
 \includegraphics[width=6in]{./figures/Project_Compute_AccessSecurity}
 \caption{协作平台安全管理}
 \label{fig:projectcomputeAccessSecurity}
+\end{figure} 
+\section{协同计算大数据开发环境} 
+
+%\section{协同计算并行管理系统}
+
+\section{协同计算大数据架构系统}
+
+\section{协同计算并行随机存储系统}
+``Volumes''如图\ref{fig:projectcomputevolumes}显示卷管理信息；``Volume Snapshots''显示了卷快照信息。
+\begin{figure}[!htb]
+\centering
+\includegraphics[width=6in]{./figures/Project_Compute_Volumes}
+\caption{协作平台卷管理}
+\label{fig:projectcomputevolumes}
 \end{figure}
+\section{协同计算网络环境系统}
 ``Network''集中展示了系统网络相关信息，如网络拓扑、路由等。如图\ref{fig:projectnetworktopology}显示了当前写作平台的网络拓扑结构，``Networks''如图\ref{fig:projectnetworknetworks}列出了平台网络出口信息。
 \begin{figure}[!htb]
 \centering
@@ -287,75 +257,30 @@
 \caption{协作平台网络信息}
 \label{fig:projectnetworknetworks}
 \end{figure}
-\subsection{镜像制作}
-\subsubsection{镜像源下载}
-镜像是虚拟机操作系统的源，本协作计算平台支持linux、windows等多种操作系统。在制作镜像之前，用户需要下载相应镜像软件包至本地。下面首先给出几种常用操作系统镜像下载地址（具体请参考https://docs.openstack.org/image-guide/obtain-images.html）：
-Centor 6 镜像 http://cloud.centos.org/centos/6/images/ \\
-Centor 7 镜像 http://cloud.centos.org/centos/7/images/ \\
-CirrOS 镜像 http://download.cirros-cloud.net/ \\
-Debian 镜像 http://cdimage.debian.org/cdimage/openstack/ \\
-Fedora 镜像 https://getfedora.org/cloud/download/ \\
-Ubuntu 镜像 http://cloud-images.ubuntu.com/
-\subsubsection{镜像制作流程}
-在协作平台管理界面，点击``\textbf{Project}''->``\textbf{Compute}''->``\textbf{Images}''进入如图\ref{fig:projectcomputeimages}所示界面，然后点击右上角``\textbf{+Create Image}''，弹出如图\ref{fig:createmage}，输入镜像名称，导入已下载镜像包，镜像格式下拉菜单中选择``\textbf{QCOW2}''，多数镜像包格式是QCOW2格式。最后点击右下角``\textbf{Create Image}''完成镜像制作。
+
+
+
+
+
+\section{使用指南}
+
+\subsection{标识}
+标识部分集中展示了项目、用户、群组以及角色等信息。图\ref{fig:identityprojects}所示给出项目标识包括的信息。项目标识列表显示所有当前运行在该协作计算平台的项目信息，如项目名称、项目描述、项目ID、运行状态等。另外，项目标识页面还提供创建项目、管理项目等功能，用户可以通过“+Create Project”按钮创建新项目，也可以在对应项目行最右侧“Manage Members”下拉菜单管理已有项目，例如删除项目、编辑项目、查看项目使用情况以及为该项目修改配额等。当写作平台运行项目数量较多时，用户也可以通过\ref{fig:identityprojects}页面上方的“Filter”设置特定规则，选择性显示部分项目。
 \begin{figure}[!htb]
 \centering
-\includegraphics[width=6in]{./figures/CreateImage}
-\caption{创建镜像}
-\label{fig:createimage}
-\end{figure}
-\subsection{虚拟机管理}
-用户有2种方式登陆虚拟机，ssh和console。下面主要介绍ssh登陆方式。
-\subsubsection{虚拟机启动}
-在写作平台管理界面，点击``\textbf{Project}''->``\textbf{Compute}''->``\textbf{Images}''，在拟启动镜像栏最右侧，点击``\textbf{Launch}''，在如图\ref{fig:launchInstance}弹出窗口中输入虚拟机名以及拟启动虚拟机数量。其中在如图\ref{fig:launchInstanceII}，选择拟启动虚拟机的配置，如CPU数量、内存大小以及硬盘大小等；在如图\ref{fig:launchInstanceIII}，选择虚拟机网络提供商;点击``\textbf{Key Pair}''，在如图\ref{fig:launchInstanceKey}弹出窗口中设置SSH登陆密钥。用户可以直接选择已有密钥如图\ref{fig:launchInstanceKey}下半窗口所示，也可以点击``\textbf{+Create Key Pair}''创建新密钥对。将创建的密钥\textbf{*.pem}文件保存至本地用于后续ssh登陆该虚拟机。
-\begin{figure}[!htb]
-\centering
-\includegraphics[width=6in]{./figures/LaunchInstance}
-\caption{启动虚拟机}
-\label{fig:launchInstance}
+\includegraphics[width=5in]{./figures/Identity_Projects}
+%\includegraphics[height=2.1338in, width=3.3307in]{./the_directed_neighbor_tree.png}
+%\epsfig{file=./Fig1.png,height=2.1338in, width=3.3307in}
+\caption{项目标识界面}
+\label{fig:identityprojects}
 \end{figure}
 
-\begin{figure}[!htb]
-\centering
-\includegraphics[width=6in]{./figures/LaunchInstanceII}
-\caption{启动虚拟机}
-\label{fig:launchInstanceII}
-\end{figure}
-\begin{figure}[!htb]
-\centering
-\includegraphics[width=6in]{./figures/LaunchInstanceIII}
-\caption{启动虚拟机}
-\label{fig:launchInstanceIII}
-\end{figure}
-\begin{figure}[!htb]
-\centering
-\includegraphics[width=6in]{./figures/LaunchInstanceKey}
-\caption{启动虚拟机}
-\label{fig:launchInstanceKey}
-\end{figure}
-用户也可以通过如图\ref{fig:launchInstanceConfig}为虚拟机添加运行脚本，例如修改用户密码、修改登陆配置等。最后点击``\textbf{Launch Instance}''完成虚拟机启动。
-\begin{figure}[!htb]
-\centering
-\includegraphics[width=6in]{./figures/LaunchInstanceConfig}
-\caption{设置虚拟机运行脚本}
-\label{fig:launchInstanceConfig}
-\end{figure}
 
-\subsubsection{虚拟机登陆}
-虚拟机启动完毕，在``\textbf{Project}''->``\textbf{Compute}''->``\textbf{Instance}''能够看到该虚拟机ip地址、配置等信息如图\ref{fig:projectcomputeinstances}所示。
 
-用户可以通过SSH登陆该虚拟机，具体指令结构如下：
-ssh -i *.pem name@ip
-其中，*.pem为在启动虚拟机时创建的密钥，注意此处必须给出该密钥的完整地址，同时该密钥文件的权限必须是600，即只有主用户有读写权限，组用户跟其他用户没有任何权限；name是该虚拟机中用户名，不同镜像通常拥有不同用户名，表\ref{tab:userName}给出常见镜像系统用户名。
-\begin{table}[!htb]
-\centering
-\caption{常见镜像默认登陆用户名}
-\label{tab:userName}
-\begin{tabular}{|c|c|} \hline
- 镜像 &登陆名\\ \hline
- ubuntu& ubuntu\\ \hline
- debian& debian\\ \hline
- centos& centos\\ \hline
-\end{tabular}
-\end{table}
+
+
+\subsection{项目}
+
+
+
 \end{document}
